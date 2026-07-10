@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "custom-crosshair",
+  "version": "${version}",
+  "name": "Bratok Crosshair",
+  "description": "Продвинутый мод для полной кастомизации прицела в Minecraft.",
+  "authors": [
+    "loxloxlox123"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/custom-crosshair/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.customcrosshair.CustomCrosshairMod"
+    ],
+    "modmenu": [
+      "net.customcrosshair.compat.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "custom-crosshair.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.20.1 <=1.20.6",
+    "java": ">=17",
+    "fabric-api": "*",
+    "cloth-config": "*"
+  }
+}
